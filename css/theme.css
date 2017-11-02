@@ -1,0 +1,119 @@
+/* theme stylesheet for PEB Online */
+
+:root{
+	--theme-color: #003762;
+	--accent: #0e527a;
+	--neutral-1: #fff;
+	--neutral-2: #f4f4f4;
+	--neutral-3: #fcfcfc;
+	--dark-1: #333;
+	--dark-2: #555;
+	--grey-1: #ccc;
+	--grey-2: #ddd;
+}
+
+body, html{
+	padding: 0;
+	margin: 0;
+	background-color: var(--neutral-2);
+	font-family: 'open sans', san-serif;
+	color: var(--dark-2);
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+	color: var(--dark-1);
+	line-height: 1.7em;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+	color: var(--dark-2);
+	font-size: 0.8em;
+	word-break: break-word;
+	line-height: 1.7em;
+}
+
+header{
+	background-color: var(--theme-color);
+	padding: 40px 10%;
+	font-family: 'Georgia', serif;
+	text-align: center;
+}
+
+header h5{
+	color: var(--neutral-1);
+	font-weight: normal;
+}
+
+header img#main-logo{
+	width: 40%;
+	margin-bottom: 30px;
+}
+
+nav{
+	padding: 13px 10%;
+	background-color: var(--accent);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	color: var(--neutral-1);
+	font-size: 0.8em;
+	cursor: pointer;
+	padding: 8px 20px;
+	border: thin solid transparent;
+	border-radius: 200px;
+}
+
+nav ul.social-nav li i.fa{
+	font-size: 1.5em;
+}
+
+section{
+	padding: 60px 10%;
+}
+
+div.content-wrapper{
+	border-radius: 3px;
+	background-color: var(--neutral-3);
+	border: thin solid var(--grey-2);
+	padding: 20px 30px;
+}
+
+/* Pseudoclasses */
+
+nav ul li{
+	transition: ease all 0.3s;
+	-webkit-transition: ease all 0.3s;
+	-o-transition: ease all 0.3s;
+	-ms-transition: ease all 0.3s;
+	-moz-transition: ease all 0.3s;
+}
+
+nav ul li:hover{
+	border-color: var(--grey-1);
+	color: var(--grey-1);
+}
+
+nav ul.social-nav li:hover{
+	border-color: transparent;
+	color: var(--grey-1);
+}
